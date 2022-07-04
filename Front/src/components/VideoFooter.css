@@ -1,0 +1,46 @@
+.videoFooter {
+	position: relative;
+	color: white;
+	bottom: 200px;
+	margin-left: 40px;
+	display: flex;
+}
+.videoFooter-text {
+	flex: 1;
+}
+.videoFooter-text > h3 {
+	padding-bottom: 20px;
+}
+.videoFooter-text > p {
+	padding-bottom: 20px;
+}
+
+.videoFooter-icon {
+	position: absolute;
+	transform: translateY(-10px);
+}
+.videoFooter-ticker > .ticker {
+	/* height: fit-content; */
+	margin-left: 30px;
+	transform: translateY(-28px);
+	width: 60%;
+}
+.videoFooter-record {
+	animation: spinTheRecord infinite 5s linear;
+	height: 55px;
+	filter: invert(1);
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+/* .ticker {
+	transform: translateY(-15px);
+} */
+@keyframes spinTheRecord {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
